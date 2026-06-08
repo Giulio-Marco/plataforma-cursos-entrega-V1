@@ -1,86 +1,80 @@
-# Plataforma de Cursos
+# Plataforma de Cursos Online - React
 
-Projeto em Flask para gerenciamento de uma plataforma de cursos online.
+Continuidade do projeto de plataforma de cursos, agora implementada em React com TypeScript, Bootstrap 5, React Router e consumo de API com JSON Server.
+
+O projeto Flask original foi mantido no repositorio, mas a entrega principal desta etapa esta na aplicacao React em `src/` e na base `db.json`.
 
 ## Funcionalidades
-- cadastro e login de usuarios
-- cadastro de categorias
-- criacao de curso por instrutor
-- criacao de modulos
-- criacao de aulas
-- matricula de alunos
-- conclusao de aulas
-- geracao de certificado
-- avaliacao de cursos
-- assinatura de planos
 
-## Links
-- Aplicacao online: https://plataforma-cursos-entrega.onrender.com
-- Carregar dados de exemplo: https://plataforma-cursos-entrega.onrender.com/popular-demo
-- Repositorio no GitHub: https://github.com/Giulio-Marco/plataforma-cursos-entrega
+- Catalogo de cursos com busca e filtro por categoria.
+- Cadastro e login simulado de usuarios.
+- Painel de aluno com matriculas, progresso, assinatura e certificados.
+- Painel de instrutor com cursos publicados.
+- Cadastro de categorias, cursos, trilhas e planos.
+- Cadastro de modulos e aulas dentro do detalhe do curso.
+- Matricula em curso, conclusao de aulas e emissao visual de certificado.
+- Avaliacao de cursos por alunos matriculados.
+- Checkout simples com assinatura e pagamento gravados no JSON Server.
+
+## Estrutura
+
+- `src/components`: componentes reutilizaveis com Bootstrap.
+- `src/pages`: telas roteadas da aplicacao.
+- `src/model`: interfaces TypeScript do modelo de dados.
+- `src/services`: consumo da API e hook de carregamento.
+- `src/context`: contexto de autenticacao simulada.
+- `src/utils`: formatacao, datas e geradores de codigos.
+- `db.json`: dados da API usada pelo JSON Server.
 
 ## Requisitos
-- Python 3.10 ou superior
+
+- Node.js 20 ou superior.
+- npm 10 ou superior.
 
 ## Como instalar
-1. Abra o terminal na pasta do projeto
-2. Crie um ambiente virtual:
-   `python -m venv .venv`
 
-3. Ative o ambiente virtual no Windows:
-   `.venv\Scripts\activate`
+```bash
+npm install
+```
 
-4. Instale as dependencias:
-   `pip install -r requirements.txt`
+## Como rodar
 
-## Como rodar localmente
-1. Execute:
-   `python main.py`
+Em um unico comando:
 
-2. Abra no navegador:
-   `http://127.0.0.1:5000`
+```bash
+npm start
+```
 
-## Como carregar exemplos
-Se quiser popular o sistema com dados de exemplo localmente, abra:
-`http://127.0.0.1:5000/popular-demo`
+Ou em dois terminais:
 
-Se estiver usando a versao online, abra:
-`https://plataforma-cursos-entrega.onrender.com/popular-demo`
+```bash
+npm run api
+npm run dev
+```
+
+Depois acesse:
+
+- Aplicacao React: `http://127.0.0.1:5173`
+- JSON Server: `http://localhost:3001`
+
+## Build
+
+```bash
+npm run build
+```
 
 ## Usuarios de exemplo
-- Professor Daniel
-  email: `daniel@cursos.com`
-  senha: `123456`
 
-- Ana Souza
-  email: `ana@cursos.com`
-  senha: `123456`
+- Instrutor: `daniel@cursos.com` / `123456`
+- Aluno: `carlos@cursos.com` / `123456`
+- Aluno com certificado: `joao@cursos.com` / `123456`
 
-- Bruno Martins
-  email: `bruno@cursos.com`
-  senha: `123456`
+## Entrega no GitHub
 
-- Carlos Lima
-  email: `carlos@cursos.com`
-  senha: `123456`
+Suba o repositorio com os arquivos React e o `db.json`:
 
-- Marina Alves
-  email: `marina@cursos.com`
-  senha: `123456`
-
-- Joao Pedro
-  email: `joao@cursos.com`
-  senha: `123456`
-
-## Observacao importante
-Se os usuarios de exemplo nao estiverem funcionando na aplicacao online, acesse primeiro:
-`https://plataforma-cursos-entrega.onrender.com/popular-demo`
-
-Como o projeto esta usando SQLite no Render, os dados de demonstracao podem precisar ser carregados novamente em alguns casos.
-
-## Banco local
-Se houver problema com banco antigo, apague o arquivo:
-`instance/plataforma.db`
-
-Depois rode novamente:
-`python main.py`
+```bash
+git add .
+git commit -m "Implementa plataforma de cursos em React"
+git push
+```

@@ -1,0 +1,455 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nomeCompleto": "Professor Daniel",
+      "email": "daniel@cursos.com",
+      "senhaHash": "123456",
+      "dataCadastro": "2026-04-27T09:00:00.000Z",
+      "tipo": "instrutor"
+    },
+    {
+      "id": 2,
+      "nomeCompleto": "Ana Souza",
+      "email": "ana@cursos.com",
+      "senhaHash": "123456",
+      "dataCadastro": "2026-04-27T09:05:00.000Z",
+      "tipo": "instrutor"
+    },
+    {
+      "id": 3,
+      "nomeCompleto": "Bruno Martins",
+      "email": "bruno@cursos.com",
+      "senhaHash": "123456",
+      "dataCadastro": "2026-04-27T09:10:00.000Z",
+      "tipo": "instrutor"
+    },
+    {
+      "id": 4,
+      "nomeCompleto": "Carlos Lima",
+      "email": "carlos@cursos.com",
+      "senhaHash": "123456",
+      "dataCadastro": "2026-04-27T09:15:00.000Z",
+      "tipo": "aluno"
+    },
+    {
+      "id": 5,
+      "nomeCompleto": "Marina Alves",
+      "email": "marina@cursos.com",
+      "senhaHash": "123456",
+      "dataCadastro": "2026-04-27T09:20:00.000Z",
+      "tipo": "aluno"
+    },
+    {
+      "id": 6,
+      "nomeCompleto": "Joao Pedro",
+      "email": "joao@cursos.com",
+      "senhaHash": "123456",
+      "dataCadastro": "2026-04-27T09:25:00.000Z",
+      "tipo": "aluno"
+    },
+    {
+      "nomeCompleto": "marcos balduino",
+      "email": "example@gmail.com",
+      "senhaHash": "123456",
+      "tipo": "instrutor",
+      "dataCadastro": "2026-06-07T17:49:56.562Z",
+      "id": 7
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Programacao",
+      "descricao": "Cursos de desenvolvimento e software."
+    },
+    {
+      "id": 2,
+      "nome": "Banco de Dados",
+      "descricao": "Cursos de modelagem, SQL e consultas."
+    },
+    {
+      "id": 3,
+      "nome": "Arquitetura de Software",
+      "descricao": "Boas praticas, engenharia, qualidade e construcao de software."
+    }
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "titulo": "Tecnologia de Construcao de Software",
+      "descricao": "Modelagem, arquitetura, padroes, qualidade e entrega continua para projetos academicos e profissionais.",
+      "instrutorId": 1,
+      "categoriaId": 3,
+      "nivel": "Intermediario",
+      "dataPublicacao": "2026-04-27T10:00:00.000Z",
+      "totalAulas": 3,
+      "totalHoras": 2.1,
+      "imagemUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": 2,
+      "titulo": "Python do Zero ao Projeto",
+      "descricao": "Aprenda logica, funcoes, listas, dicionarios e crie uma aplicacao web simples.",
+      "instrutorId": 2,
+      "categoriaId": 1,
+      "nivel": "Iniciante",
+      "dataPublicacao": "2026-04-28T10:00:00.000Z",
+      "totalAulas": 2,
+      "totalHoras": 1.1,
+      "imagemUrl": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": 3,
+      "titulo": "SQL para Banco de Dados",
+      "descricao": "Modele tabelas, relacoes, consultas e normalize seu banco de dados.",
+      "instrutorId": 3,
+      "categoriaId": 2,
+      "nivel": "Intermediario",
+      "dataPublicacao": "2026-04-29T10:00:00.000Z",
+      "totalAulas": 1,
+      "totalHoras": 0.7,
+      "imagemUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": 4,
+      "titulo": "APIs REST com Flask",
+      "descricao": "Construa APIs REST, validacao, autenticacao e integracao com banco de dados.",
+      "instrutorId": 2,
+      "categoriaId": 1,
+      "nivel": "Avancado",
+      "dataPublicacao": "2026-04-30T10:00:00.000Z",
+      "totalAulas": 1,
+      "totalHoras": 0.6,
+      "imagemUrl": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&q=80"
+    }
+  ],
+  "modulos": [
+    {
+      "id": 1,
+      "cursoId": 1,
+      "titulo": "Fundamentos da Construcao de Software",
+      "ordem": 1
+    },
+    {
+      "id": 2,
+      "cursoId": 1,
+      "titulo": "Qualidade e Evolucao",
+      "ordem": 2
+    },
+    {
+      "id": 3,
+      "cursoId": 2,
+      "titulo": "Fundamentos",
+      "ordem": 1
+    },
+    {
+      "id": 4,
+      "cursoId": 3,
+      "titulo": "Modelagem Relacional",
+      "ordem": 1
+    },
+    {
+      "id": 5,
+      "cursoId": 4,
+      "titulo": "Flask para APIs",
+      "ordem": 1
+    }
+  ],
+  "aulas": [
+    {
+      "id": 1,
+      "moduloId": 1,
+      "titulo": "Introducao a Tecnologia de Construcao de Software",
+      "tipoConteudo": "Video",
+      "urlConteudo": "https://example.com/tcs-introducao",
+      "duracaoMinutos": 45,
+      "ordem": 1
+    },
+    {
+      "id": 2,
+      "moduloId": 1,
+      "titulo": "Levantamento de requisitos e modelagem",
+      "tipoConteudo": "Texto",
+      "urlConteudo": "https://example.com/tcs-requisitos",
+      "duracaoMinutos": 30,
+      "ordem": 2
+    },
+    {
+      "id": 3,
+      "moduloId": 2,
+      "titulo": "Testes, refatoracao e entrega continua",
+      "tipoConteudo": "Video",
+      "urlConteudo": "https://example.com/tcs-qualidade",
+      "duracaoMinutos": 50,
+      "ordem": 1
+    },
+    {
+      "id": 4,
+      "moduloId": 3,
+      "titulo": "Introducao ao Python",
+      "tipoConteudo": "Video",
+      "urlConteudo": "https://example.com/python-introducao",
+      "duracaoMinutos": 35,
+      "ordem": 1
+    },
+    {
+      "id": 5,
+      "moduloId": 3,
+      "titulo": "Estruturas de repeticao",
+      "tipoConteudo": "Texto",
+      "urlConteudo": "https://example.com/python-loops",
+      "duracaoMinutos": 28,
+      "ordem": 2
+    },
+    {
+      "id": 6,
+      "moduloId": 4,
+      "titulo": "Modelo relacional",
+      "tipoConteudo": "Video",
+      "urlConteudo": "https://example.com/sql-modelo-relacional",
+      "duracaoMinutos": 42,
+      "ordem": 1
+    },
+    {
+      "id": 7,
+      "moduloId": 5,
+      "titulo": "Criando rotas e respostas JSON",
+      "tipoConteudo": "Video",
+      "urlConteudo": "https://example.com/flask-api-json",
+      "duracaoMinutos": 38,
+      "ordem": 1
+    }
+  ],
+  "matriculas": [
+    {
+      "id": 1,
+      "usuarioId": 4,
+      "cursoId": 2,
+      "dataMatricula": "2026-05-01T09:00:00.000Z",
+      "dataConclusao": "2026-06-07T18:01:08.866Z"
+    },
+    {
+      "id": 2,
+      "usuarioId": 4,
+      "cursoId": 1,
+      "dataMatricula": "2026-05-01T09:10:00.000Z",
+      "dataConclusao": null
+    },
+    {
+      "id": 3,
+      "usuarioId": 5,
+      "cursoId": 3,
+      "dataMatricula": "2026-05-02T09:00:00.000Z",
+      "dataConclusao": null
+    },
+    {
+      "id": 4,
+      "usuarioId": 6,
+      "cursoId": 4,
+      "dataMatricula": "2026-05-03T09:00:00.000Z",
+      "dataConclusao": null
+    },
+    {
+      "id": 5,
+      "usuarioId": 6,
+      "cursoId": 1,
+      "dataMatricula": "2026-05-03T09:20:00.000Z",
+      "dataConclusao": "2026-05-10T16:00:00.000Z"
+    }
+  ],
+  "progressoAulas": [
+    {
+      "id": 1,
+      "usuarioId": 4,
+      "aulaId": 4,
+      "dataConclusao": "2026-05-04T12:00:00.000Z",
+      "status": "Concluido"
+    },
+    {
+      "id": 2,
+      "usuarioId": 6,
+      "aulaId": 1,
+      "dataConclusao": "2026-05-09T12:00:00.000Z",
+      "status": "Concluido"
+    },
+    {
+      "id": 3,
+      "usuarioId": 6,
+      "aulaId": 2,
+      "dataConclusao": "2026-05-09T13:00:00.000Z",
+      "status": "Concluido"
+    },
+    {
+      "id": 4,
+      "usuarioId": 6,
+      "aulaId": 3,
+      "dataConclusao": "2026-05-10T16:00:00.000Z",
+      "status": "Concluido"
+    },
+    {
+      "usuarioId": 4,
+      "aulaId": 5,
+      "dataConclusao": "2026-06-07T18:01:08.866Z",
+      "status": "Concluido",
+      "id": 5
+    }
+  ],
+  "avaliacoes": [
+    {
+      "id": 1,
+      "usuarioId": 4,
+      "cursoId": 1,
+      "nota": 5,
+      "comentario": "Excelente curso do Professor Daniel, muito claro e bem estruturado.",
+      "dataAvaliacao": "2026-05-05T12:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "usuarioId": 5,
+      "cursoId": 3,
+      "nota": 4,
+      "comentario": "Curso muito bom para entender modelagem e consultas.",
+      "dataAvaliacao": "2026-05-06T12:00:00.000Z"
+    }
+  ],
+  "trilhas": [
+    {
+      "id": 1,
+      "titulo": "Trilha Back-end",
+      "descricao": "Sequencia sugerida para entrar em desenvolvimento back-end.",
+      "categoriaId": 1
+    },
+    {
+      "id": 2,
+      "titulo": "Trilha Engenharia de Software",
+      "descricao": "Formacao com foco em construcao, qualidade e manutencao de software.",
+      "categoriaId": 3
+    }
+  ],
+  "trilhasCursos": [
+    {
+      "id": 1,
+      "trilhaId": 1,
+      "cursoId": 2,
+      "ordem": 1
+    },
+    {
+      "id": 2,
+      "trilhaId": 1,
+      "cursoId": 3,
+      "ordem": 2
+    },
+    {
+      "id": 3,
+      "trilhaId": 1,
+      "cursoId": 4,
+      "ordem": 3
+    },
+    {
+      "id": 4,
+      "trilhaId": 2,
+      "cursoId": 1,
+      "ordem": 1
+    },
+    {
+      "id": 5,
+      "trilhaId": 2,
+      "cursoId": 4,
+      "ordem": 2
+    }
+  ],
+  "certificados": [
+    {
+      "id": 1,
+      "usuarioId": 6,
+      "cursoId": 1,
+      "trilhaId": null,
+      "codigoVerificacao": "CERT-JOAO-TCS-2026",
+      "dataEmissao": "2026-05-10T16:05:00.000Z"
+    },
+    {
+      "usuarioId": 4,
+      "cursoId": 2,
+      "trilhaId": null,
+      "codigoVerificacao": "CERT-BIQG2M-68910",
+      "dataEmissao": "2026-06-07T18:01:08.866Z",
+      "id": 2
+    }
+  ],
+  "planos": [
+    {
+      "id": 1,
+      "nome": "Plano Basico",
+      "descricao": "Acesso aos cursos introdutorios e trilhas iniciais.",
+      "preco": 29.9,
+      "duracaoMeses": 1
+    },
+    {
+      "id": 2,
+      "nome": "Plano Pro",
+      "descricao": "Acesso a todos os cursos e trilhas.",
+      "preco": 49.9,
+      "duracaoMeses": 1
+    },
+    {
+      "id": 3,
+      "nome": "Plano Anual",
+      "descricao": "Acesso completo por 12 meses com melhor custo-beneficio.",
+      "preco": 499.9,
+      "duracaoMeses": 12
+    }
+  ],
+  "assinaturas": [
+    {
+      "id": 1,
+      "usuarioId": 4,
+      "planoId": 2,
+      "dataInicio": "2026-05-01T00:00:00.000Z",
+      "dataFim": "2026-06-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "usuarioId": 5,
+      "planoId": 1,
+      "dataInicio": "2026-05-02T00:00:00.000Z",
+      "dataFim": "2026-06-02T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "usuarioId": 6,
+      "planoId": 3,
+      "dataInicio": "2026-05-03T00:00:00.000Z",
+      "dataFim": "2027-05-03T00:00:00.000Z"
+    }
+  ],
+  "pagamentos": [
+    {
+      "id": 1,
+      "assinaturaId": 1,
+      "valorPago": 49.9,
+      "dataPagamento": "2026-05-01T10:00:00.000Z",
+      "metodoPagamento": "Cartao de Credito",
+      "idTransacaoGateway": "TRX-DEMO-0001",
+      "dataFim": "2026-06-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "assinaturaId": 2,
+      "valorPago": 29.9,
+      "dataPagamento": "2026-05-02T10:00:00.000Z",
+      "metodoPagamento": "PIX",
+      "idTransacaoGateway": "TRX-DEMO-0002",
+      "dataFim": "2026-06-02T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "assinaturaId": 3,
+      "valorPago": 499.9,
+      "dataPagamento": "2026-05-03T10:00:00.000Z",
+      "metodoPagamento": "Boleto",
+      "idTransacaoGateway": "TRX-DEMO-0003",
+      "dataFim": "2027-05-03T00:00:00.000Z"
+    }
+  ]
+}
